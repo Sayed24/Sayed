@@ -1,1 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sayedrahim Sadat Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&family=Roboto&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
 
+  <!-- Header / Hero -->
+  <header id="hero">
+    <div class="hero-content">
+      <h1>Sayedrahim Sadat</h1>
+      <p id="typed-text"></p>
+      <div class="hero-buttons">
+        <a href="#projects" class="btn">View Projects</a>
+        <a href="#contact" class="btn">Contact Me</a>
+        <a href="resume.pdf" target="_blank" class="btn">Download Resume</a>
+      </div>
+      <button id="darkModeToggle" class="dark-mode-btn">🌙</button>
+    </div>
+  </header>
+
+  <!-- About Me -->
+  <section id="about">
+    <h2>About Me</h2>
+    <p>I am a Full Stack Web Developer with hands-on experience in HTML, CSS, JavaScript, React, Node.js, MongoDB, SQL, WordPress, Shopify, and more. Passionate about building responsive and interactive web applications with modern UI/UX design.</p>
+    <div class="skill-bars">
+      <div class="skill">
+        <p>HTML5</p>
+        <div class="bar"><div class="progress" style="width: 95%;"></div></div>
+      </div>
+      <div class="skill">
+        <p>CSS3</p>
+        <div class="bar"><div class="progress" style="width: 90%;"></div></div>
+      </div>
+      <div class="skill">
+        <p>JavaScript</p>
+        <div class="bar"><div class="progress" style="width: 85%;"></div></div>
+      </div>
+      <div class="skill">
+        <p>React & Redux</p>
+        <div class="bar"><div class="progress" style="width: 80%;"></div></div>
+      </div>
+      <div class="skill">
+        <p>Node.js / Express</p>
+        <div class="bar"><div class="progress" style="width: 75%;"></div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills / Technologies -->
+  <section id="skills">
+    <h2>Skills & Technologies</h2>
+    <div class="skills-grid">
+      <div class="skill-item"><i class="fab fa-html5"></i><p>HTML5</p></div>
+      <div class="skill-item"><i class="fab fa-css3-alt"></i><p>CSS3</p></div>
+      <div class="skill-item"><i class="fab fa-js-square"></i><p>JavaScript</p></div>
+      <div class="skill-item"><i class="fab fa-react"></i><p>React</p></div>
+      <div class="skill-item"><i class="fas fa-database"></i><p>MongoDB / SQL</p></div>
+      <div class="skill-item"><i class="fab fa-node-js"></i><p>Node.js</p></div>
+      <div class="skill-item"><i class="fas fa-paint-brush"></i><p>UI/UX Design</p></div>
+      <div class="skill-item"><i class="fas fa-cogs"></i><p>CMS & E-Commerce</p></div>
+      <div class="skill-item"><i class="fab fa-git-alt"></i><p>Git / GitHub</p></div>
+      <div class="skill-item"><i class="fas fa-mobile-alt"></i><p>React Native</p></div>
+    </div>
+  </section>
+
+  <!-- Projects -->
+  <section id="projects">
+    <h2>Projects</h2>
+    <div class="projects-grid">
+      <!-- Example Project Card -->
+      <div class="project-card">
+        <img src="images/smarttask.png" alt="SmartTask Dashboard">
+        <div class="project-info">
+          <h3>SmartTask Dashboard</h3>
+          <p>Dynamic dashboard with charts, tasks, and interactive UI built using HTML, CSS, JS, Chart.js</p>
+          <a href="#" target="_blank" class="btn">Live Demo</a>
+          <a href="#" target="_blank" class="btn">GitHub</a>
+        </div>
+      </div>
+      <div class="project-card">
+        <img src="images/todoapp.png" alt="To-Do List App">
+        <div class="project-info">
+          <h3>To-Do List App</h3>
+          <p>Interactive To-Do List with localStorage, filters, and responsive design using HTML, CSS, JS</p>
+          <a href="#" target="_blank" class="btn">Live Demo</a>
+          <a href="#" target="_blank" class="btn">GitHub</a>
+        </div>
+      </div>
+      <div class="project-card">
+        <img src="images/tictactoe.png" alt="Tic Tac Toe Game">
+        <div class="project-info">
+          <h3>Tic Tac Toe Game</h3>
+          <p>Interactive JS game with a responsive and visually appealing UI design</p>
+          <a href="#" target="_blank" class="btn">Live Demo</a>
+          <a href="#" target="_blank" class="btn">GitHub</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Completed Websites -->
+  <section id="websites">
+    <h2>Completed Websites</h2>
+    <div class="websites-grid">
+      <a href="https://nashvilleapartments.com" target="_blank" class="website-card">
+        <img src="images/nashville.png" alt="Nashville Apartments">
+        <div class="website-info"><p>Nashville Apartments</p></div>
+      </a>
+      <a href="https://smarthires.com" target="_blank" class="website-card">
+        <img src="images/smarthires.png" alt="SmartHires">
+        <div class="website-info"><p>SmartHires</p></div>
+      </a>
+      <a href="https://bravoprotection.com" target="_blank" class="website-card">
+        <img src="images/bravo.png" alt="Bravo Protection">
+        <div class="website-info"><p>Bravo Protection Security Services</p></div>
+      </a>
+    </div>
+  </section>
+
+  <!-- Experience / Work -->
+  <section id="experience">
+    <h2>Experience</h2>
+    <div class="timeline">
+      <div class="timeline-item">
+        <h3>Freelance Web Developer</h3>
+        <span>May 2021 – Present</span>
+        <p>Developed websites and dashboards using HTML, CSS, JS, React, CMS platforms. Focused on responsive design, UI/UX, and interactivity.</p>
+      </div>
+      <div class="timeline-item">
+        <h3>Scholars Playground</h3>
+        <span>Jan 2021 – May 2021</span>
+        <p>Enhanced UI and built web solutions using React. Implemented responsive design and modern features for client projects.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact">
+    <h2>Contact Me</h2>
+    <form id="contactForm" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+      <input type="text" name="name" placeholder="Your Name" required>
+      <input type="email" name="email" placeholder="Your Email" required>
+      <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+      <button type="submit" class="btn">Send Message</button>
+    </form>
+    <div class="social-icons">
+      <a href="https://github.com/sayedrahimsadat" target="_blank"><i class="fab fa-github"></i></a>
+      <a href="https://linkedin.com/in/sayedrahimsadat" target="_blank"><i class="fab fa-linkedin"></i></a>
+      <a href="mailto:sayedrahimsadat@gmail.com"><i class="fas fa-envelope"></i></a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2025 Created by Sayedrahim Sadat</p>
+    <button id="backToTop"><i class="fas fa-arrow-up"></i></button>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
