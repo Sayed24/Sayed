@@ -12,6 +12,7 @@
 
   <!-- Header / Hero -->
   <header id="hero">
+    <canvas id="particle-canvas"></canvas>
     <div class="hero-content">
       <h1>Sayedrahim Sadat</h1>
       <p id="typed-text"></p>
@@ -21,6 +22,9 @@
         <a href="resume.pdf" target="_blank" class="btn">Download Resume</a>
       </div>
       <button id="darkModeToggle" class="dark-mode-btn">🌙</button>
+      <div class="scroll-down">
+        <i class="fas fa-chevron-down"></i>
+      </div>
     </div>
   </header>
 
@@ -57,8 +61,15 @@
   <!-- Projects -->
   <section id="projects">
     <h2>Projects</h2>
+    <div class="project-filters">
+      <button class="filter-btn" data-filter="all">All</button>
+      <button class="filter-btn" data-filter="html">HTML</button>
+      <button class="filter-btn" data-filter="css">CSS</button>
+      <button class="filter-btn" data-filter="js">JavaScript</button>
+      <button class="filter-btn" data-filter="react">React</button>
+    </div>
     <div class="projects-grid">
-      <div class="project-card">
+      <div class="project-card" data-tech="js">
         <img src="images/smarttask.png" alt="SmartTask Dashboard">
         <div class="project-info">
           <h3>SmartTask Dashboard</h3>
@@ -67,7 +78,7 @@
           <a href="#" target="_blank" class="btn">GitHub</a>
         </div>
       </div>
-      <div class="project-card">
+      <div class="project-card" data-tech="js">
         <img src="images/todoapp.png" alt="To-Do List App">
         <div class="project-info">
           <h3>To-Do List App</h3>
@@ -76,7 +87,7 @@
           <a href="#" target="_blank" class="btn">GitHub</a>
         </div>
       </div>
-      <div class="project-card">
+      <div class="project-card" data-tech="js">
         <img src="images/tictactoe.png" alt="Tic Tac Toe Game">
         <div class="project-info">
           <h3>Tic Tac Toe Game</h3>
@@ -107,7 +118,7 @@
     </div>
   </section>
 
-  <!-- Experience / Work -->
+  <!-- Experience / Timeline -->
   <section id="experience">
     <h2>Experience</h2>
     <div class="timeline">
@@ -120,6 +131,21 @@
         <h3>Scholars Playground</h3>
         <span>Jan 2021 – May 2021</span>
         <p>Enhanced UI and built web solutions using React. Implemented responsive design and modern features for client projects.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials Section -->
+  <section id="testimonials">
+    <h2>Testimonials</h2>
+    <div class="testimonial-slider">
+      <div class="testimonial-item">
+        <p>"Sayedrahim delivered an excellent dashboard for our company. Highly professional and skilled!"</p>
+        <h4>- John Doe, Client</h4>
+      </div>
+      <div class="testimonial-item">
+        <p>"His attention to detail and coding skills are top-notch. Very impressed!"</p>
+        <h4>- Jane Smith, Client</h4>
       </div>
     </div>
   </section>
@@ -137,6 +163,7 @@
       <a href="https://github.com/sayed24" target="_blank"><i class="fab fa-github"></i></a>
       <a href="https://linkedin.com/in/sadatsayed" target="_blank"><i class="fab fa-linkedin"></i></a>
       <a href="mailto:sadatsr57@gmail.com"><i class="fas fa-envelope"></i></a>
+      <button id="copyEmailBtn" class="btn">Copy Email</button>
     </div>
   </section>
 
