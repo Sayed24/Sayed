@@ -1,178 +1,314 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Sayedrahim Sadat Portfolio</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Sayedrahim Sadat — Portfolio</title>
+  <meta name="description" content="Portfolio of Sayedrahim Sadat — Full Stack Web Developer. HTML, CSS, JavaScript, React, Node.js, WordPress, Shopify." />
+  <meta property="og:title" content="Sayedrahim Sadat — Portfolio" />
+  <meta property="og:description" content="Full Stack Web Developer — HTML, CSS, JavaScript, React, Node.js, WordPress." />
+  <!-- Fonts & Icons -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;700;900&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="" crossorigin="anonymous">
+  <!-- Highlight.js for code snippets (optional) -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css">
+  <!-- Main CSS -->
   <link rel="stylesheet" href="style.css">
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&family=Roboto&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
+  <a class="skip-link" href="#main">Skip to content</a>
 
-  <!-- Header / Hero -->
-  <header id="hero">
-    <canvas id="particle-canvas"></canvas>
-    <div class="hero-content">
-      <h1>Sayedrahim Sadat</h1>
-      <p id="typed-text"></p>
-      <div class="hero-buttons">
-        <a href="#projects" class="btn">View Projects</a>
-        <a href="#contact" class="btn">Contact Me</a>
-        <a href="resume.pdf" target="_blank" class="btn">Download Resume</a>
+  <!-- Sticky Navigation -->
+  <header id="main-header" aria-hidden="false">
+    <div class="container nav-inner">
+      <div class="brand">
+        <a href="#hero" class="logo" aria-label="Sayedrahim Sadat home">Sayedrahim Sadat</a>
       </div>
-      <button id="darkModeToggle" class="dark-mode-btn">🌙</button>
-      <div class="scroll-down">
-        <i class="fas fa-chevron-down"></i>
+      <nav id="mainNav" class="main-nav" aria-label="Primary">
+        <button id="mobileToggle" aria-label="Toggle navigation" aria-expanded="false"><i class="fas fa-bars"></i></button>
+        <ul class="nav-links" id="navLinks">
+          <li><a class="nav-link" href="#hero">Home</a></li>
+          <li><a class="nav-link" href="#about">About</a></li>
+          <li><a class="nav-link" href="#skills">Tech</a></li>
+          <li><a class="nav-link" href="#featured">Featured</a></li>
+          <li><a class="nav-link" href="#projects">Projects</a></li>
+          <li><a class="nav-link" href="#websites">Websites</a></li>
+          <li><a class="nav-link" href="#experience">Experience</a></li>
+          <li><a class="nav-link" href="#testimonials">Testimonials</a></li>
+          <li><a class="nav-link" href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="nav-cta">
+        <a href="#contact" class="btn primary">Hire Me</a>
       </div>
     </div>
   </header>
 
-  <!-- About Me -->
-  <section id="about">
-    <h2>About Me</h2>
-    <p>I am a Full Stack Web Developer with hands-on experience in HTML, CSS, JavaScript, React, Node.js, MongoDB, SQL, WordPress, Shopify, and more. Passionate about building responsive and interactive web applications with modern UI/UX design.</p>
-    <div class="skill-bars">
-      <div class="skill"><p>HTML5</p><div class="bar"><div class="progress" data-width="95%"></div></div></div>
-      <div class="skill"><p>CSS3</p><div class="bar"><div class="progress" data-width="90%"></div></div></div>
-      <div class="skill"><p>JavaScript</p><div class="bar"><div class="progress" data-width="85%"></div></div></div>
-      <div class="skill"><p>React & Redux</p><div class="bar"><div class="progress" data-width="80%"></div></div></div>
-      <div class="skill"><p>Node.js / Express</p><div class="bar"><div class="progress" data-width="75%"></div></div></div>
-    </div>
-  </section>
+  <main id="main">
+    <!-- Hero -->
+    <section id="hero" class="hero-section" aria-label="Hero">
+      <canvas id="particle-canvas" aria-hidden="true"></canvas>
+      <div class="hero-inner container">
+        <div class="hero-text">
+          <h1>Hi, I'm <span class="accent">Sayedrahim Sadat</span></h1>
+          <p class="subtitle">I build modern, responsive web apps & sites — HTML, CSS, JavaScript, React, Node.js.</p>
+          <p id="typed-text" class="typed" aria-live="polite"></p>
+          <div class="hero-actions">
+            <a href="#projects" class="btn">View Projects</a>
+            <button id="hireBtn" class="btn outline">Hire Me</button>
+            <a class="btn" href="resume.pdf" target="_blank" rel="noopener">Download Resume</a>
+          </div>
+        </div>
 
-  <!-- Skills / Technologies -->
-  <section id="skills">
-    <h2>Skills & Technologies</h2>
-    <div class="skills-grid">
-      <div class="skill-item"><i class="fab fa-html5"></i><p>HTML5</p></div>
-      <div class="skill-item"><i class="fab fa-css3-alt"></i><p>CSS3</p></div>
-      <div class="skill-item"><i class="fab fa-js-square"></i><p>JavaScript</p></div>
-      <div class="skill-item"><i class="fab fa-react"></i><p>React</p></div>
-      <div class="skill-item"><i class="fas fa-database"></i><p>MongoDB / SQL</p></div>
-      <div class="skill-item"><i class="fab fa-node-js"></i><p>Node.js</p></div>
-      <div class="skill-item"><i class="fas fa-paint-brush"></i><p>UI/UX Design</p></div>
-      <div class="skill-item"><i class="fas fa-cogs"></i><p>CMS & E-Commerce</p></div>
-      <div class="skill-item"><i class="fab fa-git-alt"></i><p>Git / GitHub</p></div>
-      <div class="skill-item"><i class="fas fa-mobile-alt"></i><p>React Native</p></div>
-    </div>
-  </section>
-
-  <!-- Projects -->
-  <section id="projects">
-    <h2>Projects</h2>
-    <div class="project-filters">
-      <button class="filter-btn" data-filter="all">All</button>
-      <button class="filter-btn" data-filter="html">HTML</button>
-      <button class="filter-btn" data-filter="css">CSS</button>
-      <button class="filter-btn" data-filter="js">JavaScript</button>
-      <button class="filter-btn" data-filter="react">React</button>
-    </div>
-    <div class="projects-grid">
-      <div class="project-card" data-tech="js">
-        <img src="images/smarttask.png" alt="SmartTask Dashboard">
-        <div class="project-info">
-          <h3>SmartTask Dashboard</h3>
-          <p>Dynamic dashboard with charts, tasks, and interactive UI built using HTML, CSS, JS, Chart.js</p>
-          <a href="https://sayed24.github.io/SmartTaskDashboard/" target="_blank" class="btn">Live Demo</a>
-          <a href="#" target="_blank" class="btn">GitHub</a>
+        <div class="hero-avatar" aria-hidden="false">
+          <div class="avatar-ring">
+            <img src="images/avatar-placeholder.png" alt="Sayedrahim Sadat portrait" loading="lazy">
+          </div>
+          <div class="role-chips" aria-hidden="true">
+            <span class="role-chip">Full Stack Developer</span>
+            <span class="role-chip">UI/UX Enthusiast</span>
+            <span class="role-chip">React / Node.js</span>
+          </div>
         </div>
       </div>
-      <div class="project-card" data-tech="js">
-        <img src="images/todoapp.png" alt="To-Do List App">
-        <div class="project-info">
-          <h3>To-Do List App</h3>
-          <p>Interactive To-Do List with localStorage, filters, and responsive design using HTML, CSS, JS</p>
-          <a href="#" target="_blank" class="btn">Live Demo</a>
-          <a href="#" target="_blank" class="btn">GitHub</a>
+      <div class="scroll-down" aria-hidden="true"><i class="fas fa-chevron-down"></i></div>
+    </section>
+
+    <!-- About -->
+    <section id="about" class="about-section container">
+      <h2>About Me</h2>
+      <div class="about-grid">
+        <div class="about-bio">
+          <p>I am a Full Stack Web Developer with experience across frontend and backend technologies. I build responsive, accessible and maintainable websites and web apps. I enjoy building clean UX and solving real problems with code.</p>
+          <ul class="about-list">
+            <li>🎓 Bachelor’s in Computer Science — Herat University</li>
+            <li>💼 Freelance Web Developer since 2021</li>
+            <li>🤝 Volunteer interpreter & translator (since 2017)</li>
+          </ul>
+
+          <div class="stats" id="stats">
+            <div class="stat">
+              <div class="stat-num" data-target="60">0</div>
+              <div class="stat-label">Projects</div>
+            </div>
+            <div class="stat">
+              <div class="stat-num" data-target="4">0</div>
+              <div class="stat-label">Years Experience</div>
+            </div>
+            <div class="stat">
+              <div class="stat-num" data-target="30">0</div>
+              <div class="stat-label">Clients</div>
+            </div>
+          </div>
+        </div>
+
+        <aside class="about-side">
+          <h3>Quick Facts</h3>
+          <div class="badges">
+            <span class="badge">HTML5</span>
+            <span class="badge">CSS3</span>
+            <span class="badge">JavaScript</span>
+            <span class="badge">React</span>
+            <span class="badge">Node.js</span>
+            <span class="badge">WordPress</span>
+          </div>
+
+          <h4>Milestones</h4>
+          <ul class="milestones">
+            <li><strong>2016</strong> — CS Degree</li>
+            <li><strong>2021</strong> — Started Freelance</li>
+            <li><strong>2024</strong> — Completed Full Stack Program</li>
+          </ul>
+
+          <a href="resume.pdf" class="btn small">Download Resume</a>
+        </aside>
+      </div>
+    </section>
+
+    <!-- Tech Stack -->
+    <section id="skills" class="container">
+      <h2>Tech Stack</h2>
+      <div id="techStack" class="tech-grid" aria-live="polite"></div>
+      <div id="techProjectsModal" class="modal hidden" role="dialog" aria-modal="true" aria-hidden="true">
+        <div class="modal-content">
+          <button class="modal-close" aria-label="Close">&times;</button>
+          <div id="techModalInner"></div>
         </div>
       </div>
-      <div class="project-card" data-tech="js">
-        <img src="images/tictactoe.png" alt="Tic Tac Toe Game">
-        <div class="project-info">
-          <h3>Tic Tac Toe Game</h3>
-          <p>Interactive JS game with a responsive and visually appealing UI design</p>
-          <a href="#" target="_blank" class="btn">Live Demo</a>
-          <a href="#" target="_blank" class="btn">GitHub</a>
+    </section>
+
+    <!-- Featured Case Studies -->
+    <section id="featured" class="container">
+      <h2>Featured Case Studies</h2>
+      <div id="featuredCarousel" class="carousel"></div>
+    </section>
+
+    <!-- Projects -->
+    <section id="projects" class="container">
+      <h2>Projects</h2>
+
+      <div class="projects-controls">
+        <div class="filters">
+          <button class="filter-btn active" data-filter="all">All</button>
+          <button class="filter-btn" data-filter="html">HTML</button>
+          <button class="filter-btn" data-filter="css">CSS</button>
+          <button class="filter-btn" data-filter="js">JavaScript</button>
+          <button class="filter-btn" data-filter="react">React</button>
+        </div>
+        <div class="search">
+          <input id="projectSearch" type="search" aria-label="Search projects" placeholder="Search projects or tags..." />
         </div>
       </div>
-    </div>
-  </section>
 
-  <!-- Completed Websites -->
-  <section id="websites">
-    <h2>Completed Websites</h2>
-    <div class="websites-grid">
-      <a href="https://nashvilleapartments.com" target="_blank" class="website-card">
-        <img src="images/nashville.png" alt="Nashville Apartments">
-        <div class="website-info"><p>Nashville Apartments</p></div>
-      </a>
-      <a href="https://smarthires.com" target="_blank" class="website-card">
-        <img src="images/smarthires.png" alt="SmartHires">
-        <div class="website-info"><p>SmartHires</p></div>
-      </a>
-      <a href="https://bravoprotection.com" target="_blank" class="website-card">
-        <img src="images/bravo.png" alt="Bravo Protection">
-        <div class="website-info"><p>Bravo Protection Security Services</p></div>
-      </a>
-    </div>
-  </section>
+      <div id="projectsGrid" class="projects-grid" aria-live="polite"></div>
 
-  <!-- Experience / Timeline -->
-  <section id="experience">
-    <h2>Experience</h2>
-    <div class="timeline">
-      <div class="timeline-item">
-        <h3>Freelance Web Developer</h3>
-        <span>May 2021 – Present</span>
-        <p>Developed websites and dashboards using HTML, CSS, JS, React, CMS platforms. Focused on responsive design, UI/UX, and interactivity.</p>
+      <!-- Project modal -->
+      <div id="projectModal" class="modal hidden" role="dialog" aria-modal="true" aria-hidden="true">
+        <div class="modal-content">
+          <button class="modal-close" aria-label="Close">&times;</button>
+          <div id="projectModalInner"></div>
+        </div>
       </div>
-      <div class="timeline-item">
-        <h3>Scholars Playground</h3>
-        <span>Jan 2021 – May 2021</span>
-        <p>Enhanced UI and built web solutions using React. Implemented responsive design and modern features for client projects.</p>
-      </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- Testimonials Section -->
-  <section id="testimonials">
-    <h2>Testimonials</h2>
-    <div class="testimonial-slider">
-      <div class="testimonial-item">
-        <p>"Sayedrahim delivered an excellent dashboard for our company. Highly professional and skilled!"</p>
-        <h4>- John Doe, Client</h4>
+    <!-- Completed Websites -->
+    <section id="websites" class="container">
+      <h2>Completed Websites</h2>
+      <div id="websitesGrid" class="websites-grid"></div>
+      <div id="websitePreviewModal" class="modal hidden" role="dialog" aria-modal="true" aria-hidden="true">
+        <div class="modal-content">
+          <button class="modal-close" aria-label="Close">&times;</button>
+          <div id="websitePreviewInner"></div>
+        </div>
       </div>
-      <div class="testimonial-item">
-        <p>"His attention to detail and coding skills are top-notch. Very impressed!"</p>
-        <h4>- Jane Smith, Client</h4>
-      </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- Contact -->
-  <section id="contact">
-    <h2>Contact Me</h2>
-    <form id="contactForm" action="mailto:sayedrahimsadat@gmail.com" method="POST" enctype="text/plain">
-      <input type="text" name="name" placeholder="Your Name" required>
-      <input type="email" name="email" placeholder="Your Email" required>
-      <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
-      <button type="submit" class="btn">Send Message</button>
-    </form>
-    <div class="social-icons">
-      <a href="https://github.com/sayed24" target="_blank"><i class="fab fa-github"></i></a>
-      <a href="https://linkedin.com/in/sadatsayed" target="_blank"><i class="fab fa-linkedin"></i></a>
-      <a href="mailto:sadatsr57@gmail.com"><i class="fas fa-envelope"></i></a>
-      <button id="copyEmailBtn" class="btn">Copy Email</button>
-    </div>
-  </section>
+    <!-- Experience -->
+    <section id="experience" class="container">
+      <h2>Experience</h2>
+      <div class="timeline" id="timeline">
+        <div class="timeline-item">
+          <h3>Freelance Web Developer</h3>
+          <span>May 2021 – Present</span>
+          <p>Built websites, dashboards, and e-commerce sites using modern frontend and CMS technologies.</p>
+        </div>
+        <div class="timeline-item">
+          <h3>Scholars Playground</h3>
+          <span>Jan 2021 – May 2021</span>
+          <p>Front-end work and UI enhancements using React.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Services -->
+    <section id="services" class="container">
+      <h2>Services</h2>
+      <div class="services-grid">
+        <div class="service-card">
+          <h3>Front-end Development</h3>
+          <p>Responsive, accessible and performance-minded UI using HTML, CSS, JS, React.</p>
+        </div>
+        <div class="service-card">
+          <h3>CMS & E-Commerce</h3>
+          <p>WordPress and Shopify customizations, theme work, and store setup.</p>
+        </div>
+        <div class="service-card">
+          <h3>UI/UX Design</h3>
+          <p>Figma-driven designs, prototyping, and handoff-ready assets.</p>
+        </div>
+        <div class="service-card">
+          <h3>Mobile Apps</h3>
+          <p>React Native cross-platform apps (iOS & Android).</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Playground -->
+    <section id="playground" class="container">
+      <h2>Playground</h2>
+      <p>Small interactive demo to demonstrate embedded JS. Edit the code and run it in a sandboxed iframe.</p>
+      <div class="playground">
+        <textarea id="playgroundCode" aria-label="playground code">// try: document.body.style.background='#f0f0f0';</textarea>
+        <div>
+          <button id="runPlayground" class="btn small">Run</button>
+          <button id="resetPlayground" class="btn small outline">Reset</button>
+        </div>
+        <iframe id="playgroundFrame" sandbox="allow-scripts"></iframe>
+      </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section id="testimonials" class="container">
+      <h2>Testimonials</h2>
+      <div class="testimonial-slider" id="testimonialSlider" aria-live="polite"></div>
+    </section>
+
+    <!-- Clients -->
+    <section id="clients" class="container">
+      <h2>Clients</h2>
+      <div id="clientsMarquee" class="clients-marquee" aria-hidden="true"></div>
+    </section>
+
+    <!-- FAQ -->
+    <section id="faq" class="container">
+      <h2>FAQ</h2>
+      <div class="faq-list">
+        <div class="faq-item">
+          <button class="faq-toggle" aria-expanded="false">Do you work remotely?</button>
+          <div class="faq-content">Yes — I work with clients remotely and can travel when needed.</div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-toggle" aria-expanded="false">What is your typical timeline?</button>
+          <div class="faq-content">Depends on project scope. Small sites: 1–2 weeks. Dashboards: 2–6 weeks.</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="container">
+      <h2>Contact Me</h2>
+
+      <!-- Mailto fallback form -->
+      <form id="contactForm" action="mailto:sayedrahimsadat@gmail.com" method="POST" enctype="text/plain" class="contact-form">
+        <input type="text" name="name" placeholder="Your Name" required aria-label="Your name">
+        <input type="email" name="email" placeholder="Your Email" required aria-label="Your email">
+        <textarea name="message" rows="5" placeholder="Your Message" required aria-label="Your message"></textarea>
+        <div class="contact-actions">
+          <button type="submit" class="btn">Send Message</button>
+          <button type="button" id="copyEmailBtn" class="btn outline">Copy Email</button>
+        </div>
+      </form>
+
+      <div class="social-icons">
+        <a href="https://github.com/sayed24" target="_blank" rel="noopener" aria-label="GitHub"><i class="fab fa-github"></i></a>
+        <a href="https://linkedin.com/in/sadatsayed" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+        <a href="mailto:sadatsr57@gmail.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
+      </div>
+    </section>
+
+  </main>
 
   <!-- Footer -->
-  <footer>
-    <p>© 2025 Created by Sayedrahim Sadat</p>
-    <button id="backToTop"><i class="fas fa-arrow-up"></i></button>
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <p>© <span id="year"></span> Created by Sayedrahim Sadat</p>
+        </div>
+        <div>
+          <nav class="footer-links">
+            <a href="#projects">Projects</a> · <a href="#contact">Contact</a> · <a href="resume.pdf" target="_blank" rel="noopener">Resume</a>
+          </nav>
+        </div>
+      </div>
+    </div>
+    <button id="backToTop" class="back-top" aria-label="Back to top"><i class="fas fa-arrow-up"></i></button>
   </footer>
 
-  <script src="script.js"></script>
+  <!-- Libraries: highlight.js and optionally others -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js" defer></script>
+
+  <!-- Main Script (deferred for performance) -->
+  <script src="script.js" defer></script>
 </body>
 </html>
