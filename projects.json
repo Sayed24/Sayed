@@ -1,1 +1,40 @@
-
+[
+  {
+    "id": "smarttask",
+    "title": "SmartTask Dashboard",
+    "description": "Dynamic admin dashboard with charts, tasks and project management features built using Chart.js and vanilla JavaScript.",
+    "tech": ["js","chartjs"],
+    "tags": ["dashboard","productivity"],
+    "live": "#",
+    "repo": "https://github.com/sayedrahimsadat/smarttask",
+    "images": ["images/smarttask.png","images/smarttask-2.png"],
+    "role": "Front-end",
+    "caseStudy": {
+      "challenge": "Display multiple task metrics clearly",
+      "solution": "Interactive charts and filters",
+      "results": "Better task visibility and productivity"
+    }
+  },
+  {
+    "id": "todoapp",
+    "title": "To-Do List App",
+    "description": "A responsive to-do app with localStorage, filters and drag-and-drop task reorder.",
+    "tech": ["js"],
+    "tags": ["todo","localstorage"],
+    "live": "#",
+    "repo": "https://github.com/sayedrahimsadat/todoapp",
+    "images": ["images/todoapp.png"],
+    "role": "Front-end"
+  },
+  {
+    "id": "tictactoe",
+    "title": "Tic Tac Toe",
+    "description": "Interactive JS game with nice UI, re-play and score tracking.",
+    "tech": ["js"],
+    "tags": ["game","ui"],
+    "live": "#",
+    "repo": "https://github.com/sayedrahimsadat/tictactoe",
+    "images": ["images/tictactoe.png"],
+    "role": "Front-end"
+  }
+]
